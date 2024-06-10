@@ -1,8 +1,14 @@
 /* eslint-disable import/newline-after-import */
 const express = require("express");
 const app = express();
+app.use(express.urlencoded({extended: true}))
+app.use(express.json())
 
-const port = 3000;
+const cors = require("cors");
+app.use(cors({origin: "http://localhost:5173"}));
+
+
+const port = 8080;
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
 })
