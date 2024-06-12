@@ -1,5 +1,9 @@
 const mongoose = require("mongoose");
-const url = "mongodb+srv://admin:nGRLqKG7ZsQZAo6n@cluster0.jgzs6pq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+// Deployed on adaptable.io
+const url = "mongodb+srv://dogeoffree-main-db-0f3a2957d25:ngQZtWZAWTmqdt3MBGqnKXSAvtDxjB@prod-us-central1-1.lfuy1.mongodb.net/dogeoffree-main-db-0f3a2957d25"
+
+// For local use only
+// const url = "mongodb+srv://admin:nGRLqKG7ZsQZAo6n@cluster0.jgzs6pq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 const Message = require("../models/message")
 mongoose.connect(url);
 
