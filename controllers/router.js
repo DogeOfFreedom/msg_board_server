@@ -21,4 +21,8 @@ router.post("/new", (req, res) => {
     
 })
 
+router.get("/", (req, res) => {
+    res.send("hello hello!!")
+})
+
 module.exports = router;
