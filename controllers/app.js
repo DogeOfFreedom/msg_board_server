@@ -9,7 +9,7 @@ app.use(cors({origin: "http://localhost:5173"}));
 
 
 const port = 8080;
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
     console.log(`Server is listening on port ${port}`);
 })
 
