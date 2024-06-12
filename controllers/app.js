@@ -8,8 +8,8 @@ const cors = require("cors");
 app.use(cors({origin: "http://localhost:5173"}));
 
 
-const port = 8000;
-app.listen(port, () => {
+const port = 80;
+app.listen(port, "0.0.0.0", () => {
     console.log(`Server is listening on port ${port}`);
 })
 
